@@ -1,0 +1,34 @@
+.app-layout__header {
+  display: flex;
+  position: fixed;
+  height: var(--header-size);
+  left: 0;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #FFFFFF11;
+}
+
+.app-layout__header--container {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  max-width: var(--boxed-size);
+  padding: 0 var(--spacing);
+  justify-content: space-between;
+}
+
+.app-layout__header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  align-self: center;
+}
+
+.app-layout__header__version {
+  margin-left: 4px;
+  opacity: .5;
+}
+
+.app-layout__header__links {
+
+}

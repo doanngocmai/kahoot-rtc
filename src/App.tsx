@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {createTheme, NextUIProvider} from '@nextui-org/react';
+import {AppViews} from "./views";
+import {Provider as ReduxProvider} from "react-redux";
+import {store} from "./redux/store";
+
+const darkTheme = createTheme({
+  type: 'dark',
+  theme: {
+    colors: {},
+  }
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReduxProvider store={store}>
+      <NextUIProvider theme={darkTheme}>
+        <div className="App">
+          <AppViews/>
+        </div>
+      </NextUIProvider>
+    </ReduxProvider>
   );
 }
 
