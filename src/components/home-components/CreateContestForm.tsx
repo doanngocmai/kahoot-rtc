@@ -55,6 +55,8 @@ export const CreateContestForm = () => {
           <Input
             width={'100%'}
             label={'Contest Name'}
+            aria-label={'Contest Name'}
+            aria-labelledby={'Contest Name'}
             placeholder={'Contest name...'}
           />
         </Grid>

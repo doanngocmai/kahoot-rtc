@@ -12,9 +12,11 @@ export const AppLayout = ({children}: AppLayoutProps) => {
       <div className={"app-layout__header"}>
         <div className={"app-layout__header--container"}>
           <div className={"app-layout__header__logo"}>
-            <Text weight="bold" transform="uppercase">
-              KRTC
-            </Text>
+            <a href={'/'}>
+              <Text weight="bold" transform="uppercase">
+                KRTC
+              </Text>
+            </a>
             <Text className={"app-layout__header__version"} weight={"normal"} size={10}>v1.0</Text>
           </div>
           <div className={"app-layout__header__links"}>
