@@ -3,8 +3,8 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {AppLayout} from "../layouts/AppLayout";
 import {LandingPage} from "./app/LandingPage";
 import {CreateContest} from "./app/CreateContest";
-import {JoinContest} from "./app/JoinContest";
 import {ManageQuestions} from "./app/ManageQuestions";
+import ShowQuiz from "./app/JoinContest";
 
 export const AppViews = () => {
   return (
@@ -13,7 +13,7 @@ export const AppViews = () => {
         <Route path={"/"} element={<AppLayout/>}>
           <Route index element={<LandingPage/>}/>
           <Route path={"create"} element={<CreateContest/>}/>
-          <Route path={"join"} element={<JoinContest/>}/>
+          <Route path={"join"} element={<ShowQuiz/>}/>
           <Route path={"manage-questions"} element={<ManageQuestions/>}/>
         </Route>
       </Routes>
